@@ -12,7 +12,7 @@ public class Base3 {
 		System.out.println("MobileAPILogin");
 	}
 
-	@Test(groups = {"Smoke"})
+	@Test(groups = { "Smoke" })
 	public void MobileLoginPassword() {
 		System.out.println("MobileLoginPassword");
 	}
@@ -21,8 +21,9 @@ public class Base3 {
 	public void MobileAPILogout() {
 		System.out.println("MobileAPILogout");
 	}
-
-	@Test
+	
+//	These are called "Helper Attributes"
+	@Test(dependsOnMethods = { "MobileAPILogout","MobileAPILogin" }) // New the MobileAPILogout method depends on WebLoginPassword method.. first MobileAPILogout will execute then WebLoginPassword will execute
 	public void WebLoginPassword() {
 		System.out.println("WebLoginPassword");
 	}
@@ -31,6 +32,7 @@ public class Base3 {
 	public void BeforeMethod() {
 		System.out.println("i will execute before every method of class Base3");
 	}
+
 	@AfterMethod
 	public void AfterMethod() {
 		System.out.println("i will execute After every method of class Base3");

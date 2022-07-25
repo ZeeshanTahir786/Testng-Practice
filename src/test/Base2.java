@@ -12,12 +12,12 @@ public class Base2 {
 		System.out.println("BfSiute");
 	}
 
-	@Test(groups = {"Smoke"})
+	@Test(groups = { "Smoke" })
 	public void name3() {
 		System.out.println("Hell 3");
 	}
 
-	@Test
+	@Test(enabled = false) // if you dont want to run any specific test case then this is the option for it
 	public void name4() {
 		System.out.println("name 4");
 	}
