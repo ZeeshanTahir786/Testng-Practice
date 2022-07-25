@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -29,6 +30,10 @@ public class Base3 {
 	@BeforeMethod
 	public void BeforeMethod() {
 		System.out.println("i will execute before every method of class Base3");
+	}
+	@AfterMethod
+	public void AfterMethod() {
+		System.out.println("i will execute After every method of class Base3");
 	}
 
 	@BeforeTest
