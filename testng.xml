@@ -18,6 +18,8 @@
 					<exclude name="name4"></exclude>
 				</methods>
 			</class>
+			<class name="test.Base"></class>
+			<class name="test.Base3"></class>
 		</classes>
 	</test>
 </suite> <!-- Suite -->

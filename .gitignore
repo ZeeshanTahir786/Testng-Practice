@@ -40,7 +40,7 @@ buildNumber.properties
 .pmd
 .project
 .settings
-test-output
+test-output/
 pom.org.test.xml.bak
 pom.org.test.xml.next
 pom.org.test.xml.versionsBackup

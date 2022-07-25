@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Base {
@@ -11,8 +12,14 @@ public class Base {
 	public void name() {
 		System.out.println("Hell");
 	}
+
 	@Test
 	public void name2() {
 		System.out.println("name 2");
+	}
+
+	@AfterTest
+	public void AfterTest() {
+		System.out.println("i will run after set");
 	}
 }
