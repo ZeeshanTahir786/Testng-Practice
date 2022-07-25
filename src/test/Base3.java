@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,11 @@ public class Base3 {
 	@Test
 	public void WebLoginPassword() {
 		System.out.println("WebLoginPassword");
+	}
+
+	@BeforeMethod
+	public void BeforeMethod() {
+		System.out.println("i will execute before every method of class Base3");
 	}
 
 	@BeforeTest
