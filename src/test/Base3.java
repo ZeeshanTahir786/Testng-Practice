@@ -12,7 +12,7 @@ public class Base3 {
 		System.out.println("MobileAPILogin");
 	}
 
-	@Test
+	@Test(groups = {"Smoke"})
 	public void MobileLoginPassword() {
 		System.out.println("MobileLoginPassword");
 	}

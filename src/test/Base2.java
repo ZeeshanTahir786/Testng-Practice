@@ -12,7 +12,7 @@ public class Base2 {
 		System.out.println("BfSiute");
 	}
 
-	@Test
+	@Test(groups = {"Smoke"})
 	public void name3() {
 		System.out.println("Hell 3");
 	}
