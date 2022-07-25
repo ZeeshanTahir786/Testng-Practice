@@ -1,32 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-25T18:27:50 PKT" name="Default suite" finished-at="2022-07-25T18:27:50 PKT" duration-ms="31">
+  <suite started-at="2022-07-25T18:50:32 PKT" name="Suite" finished-at="2022-07-25T18:50:32 PKT" duration-ms="47">
     <groups>
       <group name="Smoke">
-        <method signature="Base2.name3()[pri:0, instance:test.Base2@2b6856dd]" name="name3" class="test.Base2"/>
+        <method signature="Base2.name3()[pri:0, instance:test.Base2@add0edd]" name="name3" class="test.Base2"/>
+        <method signature="Base3.MobileLoginPassword()[pri:0, instance:test.Base3@78047b92]" name="MobileLoginPassword" class="test.Base3"/>
+        <method signature="Base.name2()[pri:0, instance:test.Base@5e4c8041]" name="name2" class="test.Base"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-07-25T18:27:50 PKT" name="Default test" finished-at="2022-07-25T18:27:50 PKT" duration-ms="31">
-      <class name="test.Base2">
-        <test-method is-config="true" signature="BfSIute()[pri:0, instance:test.Base2@2b6856dd]" started-at="2022-07-25T18:27:50 PKT" name="BfSIute" finished-at="2022-07-25T18:27:50 PKT" duration-ms="6" status="PASS">
+    <test started-at="2022-07-25T18:50:32 PKT" name="Test" finished-at="2022-07-25T18:50:32 PKT" duration-ms="47">
+      <class name="test.Base">
+        <test-method signature="name()[pri:0, instance:test.Base@5e4c8041]" started-at="2022-07-25T18:50:32 PKT" name="name" finished-at="2022-07-25T18:50:32 PKT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BfSIute -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Base2@2b6856dd]" started-at="2022-07-25T18:27:50 PKT" name="BeforeMethod" finished-at="2022-07-25T18:27:50 PKT" duration-ms="1" status="PASS">
+        </test-method> <!-- name -->
+        <test-method signature="name2()[pri:0, instance:test.Base@5e4c8041]" started-at="2022-07-25T18:50:32 PKT" name="name2" finished-at="2022-07-25T18:50:32 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name2 -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:test.Base@5e4c8041]" started-at="2022-07-25T18:50:32 PKT" name="AfterTest" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- test.Base -->
+      <class name="test.Base3">
+        <test-method is-config="true" signature="BeforeTestRun()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="BeforeTestRun" finished-at="2022-07-25T18:50:32 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestRun -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="BeforeMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="name3()[pri:0, instance:test.Base2@2b6856dd]" started-at="2022-07-25T18:27:50 PKT" name="name3" finished-at="2022-07-25T18:27:50 PKT" duration-ms="7" status="PASS">
+        <test-method signature="MobileAPILogin(java.lang.String)[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="MobileAPILogin" finished-at="2022-07-25T18:50:32 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileAPILogin -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="AfterMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="BeforeMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="MobileAPILogout()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="MobileAPILogout" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileAPILogout -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="AfterMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="MobileLoginPassword()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="MobileLoginPassword" finished-at="2022-07-25T18:50:32 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginPassword -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="BeforeMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="AfterMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="WebLoginPassword()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="WebLoginPassword" finished-at="2022-07-25T18:50:32 PKT" depends-on-methods="test.Base3.MobileAPILogin, test.Base3.MobileAPILogout" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginPassword -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="BeforeMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Base3@78047b92]" started-at="2022-07-25T18:50:32 PKT" name="AfterMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- test.Base3 -->
+      <class name="test.Base2">
+        <test-method is-config="true" signature="BfSIute()[pri:0, instance:test.Base2@add0edd]" started-at="2022-07-25T18:50:32 PKT" name="BfSIute" finished-at="2022-07-25T18:50:32 PKT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BfSIute -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Base2@add0edd]" started-at="2022-07-25T18:50:32 PKT" name="BeforeMethod" finished-at="2022-07-25T18:50:32 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="name3()[pri:0, instance:test.Base2@add0edd]" started-at="2022-07-25T18:50:32 PKT" name="name3" finished-at="2022-07-25T18:50:32 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name3 -->
-        <test-method is-config="true" signature="AfSuite()[pri:0, instance:test.Base2@2b6856dd]" started-at="2022-07-25T18:27:55 PKT" name="AfSuite" finished-at="2022-07-25T18:27:55 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfSuite()[pri:0, instance:test.Base2@add0edd]" started-at="2022-07-25T18:50:37 PKT" name="AfSuite" finished-at="2022-07-25T18:50:37 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfSuite -->
       </class> <!-- test.Base2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

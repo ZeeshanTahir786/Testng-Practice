@@ -3,13 +3,16 @@ package test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Base3 {
 
+	@Parameters({ "Url" })
 	@Test
-	public void MobileAPILogin() {
+	public void MobileAPILogin(String urlName) {
 		System.out.println("MobileAPILogin");
+		System.out.println(urlName);
 	}
 
 	@Test(groups = { "Smoke" })
@@ -21,9 +24,14 @@ public class Base3 {
 	public void MobileAPILogout() {
 		System.out.println("MobileAPILogout");
 	}
-	
+
 //	These are called "Helper Attributes"
-	@Test(dependsOnMethods = { "MobileAPILogout","MobileAPILogin" }) // New the MobileAPILogout method depends on WebLoginPassword method.. first MobileAPILogout will execute then WebLoginPassword will execute
+
+	// New the MobileAPILogout method depends on
+	// WebLoginPassword method.. first
+	// MobileAPILogout will execute then
+	// WebLoginPassword will execute
+	@Test(dependsOnMethods = { "MobileAPILogout", "MobileAPILogin" })
 	public void WebLoginPassword() {
 		System.out.println("WebLoginPassword");
 	}
