@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-25T17:28:16 PKT" name="Suite" finished-at="2022-07-25T17:28:16 PKT" duration-ms="58">
+    <groups>
+    </groups>
+    <test started-at="2022-07-25T17:28:16 PKT" name="Test" finished-at="2022-07-25T17:28:16 PKT" duration-ms="58">
+      <class name="test.Base">
+        <test-method signature="name()[pri:0, instance:test.Base@14ec4505]" started-at="2022-07-25T17:28:16 PKT" name="name" finished-at="2022-07-25T17:28:16 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name -->
+        <test-method signature="name2()[pri:0, instance:test.Base@14ec4505]" started-at="2022-07-25T17:28:16 PKT" name="name2" finished-at="2022-07-25T17:28:16 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name2 -->
+      </class> <!-- test.Base -->
+      <class name="test.Base3">
+        <test-method signature="MobileAPILogin()[pri:0, instance:test.Base3@1d548a08]" started-at="2022-07-25T17:28:16 PKT" name="MobileAPILogin" finished-at="2022-07-25T17:28:16 PKT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileAPILogin -->
+        <test-method signature="MobileAPILogout()[pri:0, instance:test.Base3@1d548a08]" started-at="2022-07-25T17:28:16 PKT" name="MobileAPILogout" finished-at="2022-07-25T17:28:16 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileAPILogout -->
+        <test-method signature="MobileLoginPassword()[pri:0, instance:test.Base3@1d548a08]" started-at="2022-07-25T17:28:16 PKT" name="MobileLoginPassword" finished-at="2022-07-25T17:28:16 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginPassword -->
+        <test-method signature="WebLoginPassword()[pri:0, instance:test.Base3@1d548a08]" started-at="2022-07-25T17:28:16 PKT" name="WebLoginPassword" finished-at="2022-07-25T17:28:16 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginPassword -->
+      </class> <!-- test.Base3 -->
+      <class name="test.Base2">
+        <test-method signature="name3()[pri:0, instance:test.Base2@e50a6f6]" started-at="2022-07-25T17:28:16 PKT" name="name3" finished-at="2022-07-25T17:28:16 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name3 -->
+        <test-method signature="name4()[pri:0, instance:test.Base2@e50a6f6]" started-at="2022-07-25T17:28:16 PKT" name="name4" finished-at="2022-07-25T17:28:16 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name4 -->
+      </class> <!-- test.Base2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
